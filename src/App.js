@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./index.css";
 
-const App = ({ heading = 10, rateOfTurn = 10 }) => {
+const GyroScope = ({ heading = 10, rateOfTurn = 10 }) => {
   const [currentHeading, setCurrentHeading] = useState(0);
   const animationRef = useRef(null);
 
@@ -185,4 +185,4 @@ const App = ({ heading = 10, rateOfTurn = 10 }) => {
   );
 };
 
-export default App;
+export default GyroScope;

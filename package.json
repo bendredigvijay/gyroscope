@@ -1,38 +1,24 @@
 {
-  "name": "gyroscope",
-  "version": "0.1.0",
-  "private": true,
+  "name": "gyroscope-mdby-digvijay",
+  "version": "1.0.8",
+  "description": "The Gyro Heading Indicator simulates a ship's or aircraft's heading by rotating a degree-marked dial against a fixed red arrow pointing north. The heading smoothly animates to its new value, with the Rate of Turn (ROT) displaying how fast the heading changes in degrees per minute. The dial moves opposite to the turn direction, mimicking real-world gyro behavior, making it ideal for maritime and aviation navigation.",
+  "author": "Digvijay Bendre",
+  "license": "ISC",
+  "main": "dist/main.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack",
+    "prepublishOnly": "npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
   }
 }
